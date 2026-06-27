@@ -101,17 +101,27 @@
 
         PSData = @{
 
-            # Tags applied to this module. These help with module discovery in online galleries.
-            # Tags = @()
+           # Tags applied to this module. These help with module discovery in online galleries.
+            Tags = @(
+                'PowerShell', 
+                'Utilities', 
+                'Banana', 
+                'Windows', 
+                'Networking', 
+                'PowerShellUtilities', 
+                'Miscellaneous', 
+                'SystemAdministration', 
+                'Automation'
+            )
 
             # A URL to the license for this module.
-            # LicenseUri = ''
+            # LicenseUri = 'https://raw.githubusercontent.com/rez23/PsBananaUtils/main/LICENSE'
 
             # A URL to the main website for this project.
-            # ProjectUri = ''
+            ProjectUri = 'https://github.com/rez23/PsBananaUtils'
 
             # A URL to an icon representing this module.
-            # IconUri = ''
+            # IconUri = 'https://raw.githubusercontent.com/rez23/PsBananaUtils/main/Resources/BananaIcon.png'
 
             # ReleaseNotes of this module
             # ReleaseNotes = ''
