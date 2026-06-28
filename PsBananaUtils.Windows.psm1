@@ -70,7 +70,7 @@ Register-ArgumentCompleter -CommandName New-File -ParameterName Property -Script
         -fakeBoundParameters $fakeBoundParameters
 }
 
-Register-ArgumentCompleter -CommandName New-Folder -ParameterName Property -ScriptBlock {
+Register-ArgumentCompleter -CommandName New-Directory -ParameterName Property -ScriptBlock {
     param($commandName, $parameterName, $wordToComplete, $commandAst, $fakeBoundParameters)
     $ExcludedProps = @("ItemType")
     & $script:SettingUpCompletionForHyperVManager `
@@ -82,6 +82,10 @@ Register-ArgumentCompleter -CommandName New-Folder -ParameterName Property -Scri
         -commandAst $commandAst `
         -fakeBoundParameters $fakeBoundParameters
 }
+
+Set-Alias -Name touch -Value New-File
+Set-Alias -Name ln -Value New-Symlink
+Set-Alias -Name jn -Value New-Junction
 
 Export-ModuleMember -Function (Get-ChildItem "$PSScriptRoot\Public\*.ps1" -Recurse | ForEach-Object { $_.BaseName }) `
     -Alias touch, ln, jn
