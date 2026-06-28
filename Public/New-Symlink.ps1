@@ -16,7 +16,7 @@ Symbolic link path to create.
 Additional arguments forwarded to New-Item.
 
 .EXAMPLE
-./New-SymLink.ps1 -Value "C:\Tools" -Path "D:\ToolLink"
+New-Symlink -Value "C:\Tools" -Path "D:\ToolLink"
 
 Creates D:\ToolLink as a symbolic link to C:\Tools.
 #>

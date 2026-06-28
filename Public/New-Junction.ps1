@@ -16,7 +16,7 @@ Junction path to create.
 Additional arguments forwarded to New-Item.
 
 .EXAMPLE
-./New-Junction.ps1 -Value "C:\Projects\Shared" -Path "D:\LinkToShared"
+New-Junction -Value "C:\Projects\Shared" -Path "D:\LinkToShared"
 
 Creates D:\LinkToShared as a junction to C:\Projects\Shared.
 #>

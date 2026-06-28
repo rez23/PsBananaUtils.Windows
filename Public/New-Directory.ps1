@@ -1,3 +1,20 @@
+<#
+.SYNOPSIS
+    Creates a new directory.
+
+.DESCRIPTION
+    This function creates a new directory at the specified path with the given name.
+    Additional arguments can be passed to customize the creation process.
+
+.PARAMETER Value
+    The name of the directory to create.
+
+.PARAMETER Path
+    The path where the directory will be created.
+
+.PARAMETER Arguments
+    Additional arguments to pass to the New-Item cmdlet.
+#>
 function New-Directory {
     [CmdletBinding()]
     [OutputType([System.IO.FileSystemInfo])]

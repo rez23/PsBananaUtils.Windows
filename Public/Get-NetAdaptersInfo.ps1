@@ -14,7 +14,7 @@ Include Bluetooth adapters in the results.
 
 .EXAMPLE
 # Get Hyper V interfaces and IP addresses
-Get-IpAdressesFromAdapters -Ethernet | Where-Object { $_.Name -match "HyperV"}
+Get-NetAdaptersInfo -Ethernet | Where-Object { $_.Name -match "HyperV"}
 #>
 function Get-NetAdaptersInfo {
     [CmdletBinding()]

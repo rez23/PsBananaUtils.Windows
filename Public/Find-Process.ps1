@@ -15,12 +15,12 @@ Stops matching processes instead of returning them.
 Stops processes without confirmation and passes -Force to Stop-Process.
 
 .EXAMPLE
-./Find-Process.ps1 -Pattern "code"
+Find-Process -Pattern "code"
 
 Lists processes with names that match "code".
 
 .EXAMPLE
-./Find-Process.ps1 -Pattern "node" -Stop -Force
+Find-Process -Pattern "node" -Stop -Force
 
 Stops matching node processes without confirmation.
 #>
